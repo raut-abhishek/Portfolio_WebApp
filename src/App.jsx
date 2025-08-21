@@ -6,6 +6,6 @@ function App() {
       Tailwind is working 🎉
     </h1></>
   );
-}
-
+}  
+ 
 export default App
