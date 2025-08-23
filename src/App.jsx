@@ -1,11 +1,15 @@
+import React from "react";
+import Navbar from "./components/Navbar/Navbar";
 
-function App() {
+
+const App = () =>  {
   return (
-    <>
-    <h1 className="text-4xl font-bold text-purple-600 underline">
-      Tailwind is working 🎉
-    </h1></>
-  );
+    <div >
+      <div>
+        <Navbar />
+      </div>
+    </div>
+  )
 }  
  
 export default App
