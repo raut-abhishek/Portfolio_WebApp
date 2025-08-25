@@ -1,7 +1,7 @@
 @import "tailwindcss";
 body{
     min-height: 100vh;
-    background: linear-gradient(135deg, #020024 0%, #001933 40%, #000d1a 100%);
+    /* background: linear-gradient(135deg, #020024 0%, #001933 40%, #000d1a 100%); */
 }
 
 
@@ -15,7 +15,7 @@ body{
 
 @theme {
   /* animation utility */
-  --animate-blob: blob 10s infinite;
+  --animate-blob: blob 15s infinite;
 
   /* custom gradient */
   --background-skills-gradient:
