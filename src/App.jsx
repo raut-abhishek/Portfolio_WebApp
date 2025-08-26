@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "./components/Navbar/Navbar";
 import BlurBlob from "./components/BlurBlob";
 import About from "./components/About/About"
+import Skills from "./components/Skills/Skills";
 
 
 const App = () =>  {
@@ -12,6 +13,7 @@ const App = () =>  {
       <div className="relative pt-20">
         <Navbar />
         <About/>
+        <Skills/>
       </div>
 
     </div>
