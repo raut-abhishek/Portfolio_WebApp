@@ -1,7 +1,26 @@
 @import "tailwindcss";
 body{
     min-height: 100vh;
+    font-family: 'Matter', sans-serif;
     /* background: linear-gradient(135deg, #020024 0%, #001933 40%, #000d1a 100%); */
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: 'Matter';
+  src: url('./assets/fonts/Matter-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Matter';
+  src: url('./assets/fonts/Matter-light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
 }
 
 
