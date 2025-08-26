@@ -1,15 +1,17 @@
 import React from 'react'
 import ReactTypingEffect from 'react-typing-effect';
-import { Typewriter } from 'react-simple-typewriter'
+import { Typewriter } from 'react-simple-typewriter'; 
+import Tilt from 'react-parallax-tilt';
+import ProfileImage from '../../assets/Profile.png'
 
 const About = () => {
   return (
     <section id='about' className='py-4 px-[7vw] lg:px-[20vw] font-sans mt-16 md:mt-24 lg:mt-32'>
 
-      <div className='flex flex-col-reverse md:flex-row justify-between items-center '>
+      <div className='flex flex-col-reverse md:flex-row justify-between items-center -translate-y-25'>
 
         {/* Left side */}
-        <div className='md:w-1/2 text-center md:text-left mt-8 md:mt-0'>
+        <div className='md:w-1/2 text-center md:text-left mt-8 md:mt-0 md:-ml-6'>
 
         {/* gretting */}
         <h1 className='text-3xl sm:text-5xl md:text-6xl font-bold text-white mb-2 leading-tight'>
@@ -55,8 +57,29 @@ const About = () => {
           >
             DOWNLOAD CV
           </a>
-
         </div>
+
+        {/* Right side */}
+        <div className='md:w-1/2 flex justify-center md:justify-end md:pl-2 -translate-y-10 translate-x-30'>
+          <Tilt
+            className='w-48 sm:w-64 md:w-[30rem] aspect-square border-4 border-purple-700 rounded-full flex items-center justify-center overflow-hidden'
+            tiltMaxAngleX={20}
+            tiltMaxAngleY={20}
+            perspective={1000}
+            scale={1.05}
+            transitionSpeed={1000}
+            gyroscope={true}
+          >
+            <img
+              src={ProfileImage}
+              alt="Abhishek Raut"
+              className='w-full h-full object-cover rounded-full drop-shadow-[0_10px_20px_rgba(130,69,236,0.5)] '
+            />
+          </Tilt>
+        </div>
+
+
+
       </div>
     </section>
   )
