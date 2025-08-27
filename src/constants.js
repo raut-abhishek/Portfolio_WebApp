@@ -7,6 +7,11 @@ import tailwindcssLogo from './assets/tech_logo/tailwindcss.png';
 import gsapLogo from './assets/tech_logo/gsap.png';
 import javaLogo from './assets/tech_logo/java.png';
 import mcLogo from './assets/tech_logo/mc.png';
+// Skills Section Logo's
+import gitLogo from './assets/tech_logo/git.png';
+import githubLogo from './assets/tech_logo/github.png';
+import vscodeLogo from './assets/tech_logo/vscode.png';
+import vercelLogo from './assets/tech_logo/vercel.png'; 
 
 
 
@@ -34,6 +39,16 @@ export const SkillsInfo = [
       { name: 'Java', logo: javaLogo },,
       { name: 'JavaScript', logo: javascriptLogo }
     ],
-  }
+  },
+  {
+    title: 'Tools',
+    skills: [
+      { name: 'Git', logo: gitLogo },
+      { name: 'GitHub', logo: githubLogo },
+      { name: 'VS Code', logo: vscodeLogo },
+      { name: 'Vercel', logo: vercelLogo },,
+      { name: 'Compass', logo: mcLogo },
+    ],
+  },
 ]
 
