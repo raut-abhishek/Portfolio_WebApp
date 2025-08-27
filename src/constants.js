@@ -6,6 +6,9 @@ import reactjsLogo from './assets/tech_logo/reactjs.png';
 import tailwindcssLogo from './assets/tech_logo/tailwindcss.png';
 import gsapLogo from './assets/tech_logo/gsap.png';
 import javaLogo from './assets/tech_logo/java.png';
+import mcLogo from './assets/tech_logo/mc.png';
+
+
 
 
 
@@ -22,5 +25,15 @@ export const SkillsInfo = [
       { name: 'JAVA', logo: javaLogo },
 
     ],
+  },
+  {
+    title: 'Languages',
+    skills: [
+      { name: 'HTML', logo: htmlLogo },
+      { name: 'CSS', logo: cssLogo },
+      { name: 'Java', logo: javaLogo },,
+      { name: 'JavaScript', logo: javascriptLogo }
+    ],
   }
 ]
+
