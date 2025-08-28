@@ -11,7 +11,10 @@ import mcLogo from './assets/tech_logo/mc.png';
 import gitLogo from './assets/tech_logo/git.png';
 import githubLogo from './assets/tech_logo/github.png';
 import vscodeLogo from './assets/tech_logo/vscode.png';
-import vercelLogo from './assets/tech_logo/vercel.png'; 
+import vercelLogo from './assets/tech_logo/vercel.png';
+
+// Experience Section Logo's
+import internpeLogo from './assets/company_logo/internpeLogo.png'
 
 
 
@@ -56,22 +59,17 @@ export const SkillsInfo = [
 export const experiences = [
   {
     id: 0,
-    img: webverseLogo,
-    role: "Fullstack Developer",
-    company: "Webverse Digital",
-    date: "April 2024 - Present",
-    desc: "Developed dynamic and scalable web applications using the MERN stack, handling both frontend and backend development. Collaborated with cross-functional teams to build responsive UI, implement RESTful APIs, and optimize application performance in an agile environment.",
+    img: internpeLogo,
+    role: "Web Developer",
+    company: "InternPe",
+    date: "February 2024 - March 2024",
+    desc: "Developed dynamic and scalable web applications using the fornt-end framework, handling frontend development. Collaborated with cross-functional teams to build responsive UI, and optimize application performance.",
     skills: [
       "HTML",
       "CSS",
       "JavaScript",
       "React JS",
-      "TypeScript",
-      "Node JS",
-      "Tailwind CSS",
-      "MongoDb",
-      "Redux",
-      " Next Js",
-    ],
+      "Tailwind CSS"
+    ]
   }
 ];
