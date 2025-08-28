@@ -3,7 +3,7 @@ import Navbar from "./components/Navbar/Navbar";
 import BlurBlob from "./components/BlurBlob";
 import About from "./components/About/About"
 import Skills from "./components/Skills/Skills";
-
+import Experience from "./components/Experience/Experience"
 
 const App = () =>  {
   return (
@@ -14,6 +14,7 @@ const App = () =>  {
         <Navbar />
         <About/>
         <Skills/>
+        <Experience/>
       </div>
 
     </div>
