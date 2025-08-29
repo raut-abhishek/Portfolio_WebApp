@@ -14,7 +14,7 @@ import vscodeLogo from './assets/tech_logo/vscode.png';
 import vercelLogo from './assets/tech_logo/vercel.png';
 
 // Experience Section Logo's
-import internpeLogo from './assets/company_logo/internpeLogo.png'
+import interpeLogo from './assets/company_logo/interpeLogo.png'
 
 
 
@@ -59,7 +59,7 @@ export const SkillsInfo = [
 export const experiences = [
   {
     id: 0,
-    img: internpeLogo,
+    img: interpeLogo,
     role: "Web Developer",
     company: "InternPe",
     date: "February 2024 - March 2024",
