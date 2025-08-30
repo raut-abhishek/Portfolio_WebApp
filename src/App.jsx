@@ -4,6 +4,7 @@ import BlurBlob from "./components/BlurBlob";
 import About from "./components/About/About"
 import Skills from "./components/Skills/Skills";
 import Experience from "./components/Experience/Experience"
+import Contact from "./components/Contact/Contact"
 
 const App = () =>  {
   return (
@@ -15,6 +16,8 @@ const App = () =>  {
         <About/>
         <Skills/>
         <Experience/>
+        <Contact/>
+
       </div>
 
     </div>
