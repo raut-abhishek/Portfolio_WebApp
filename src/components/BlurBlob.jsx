@@ -7,7 +7,7 @@ const BlurBlob = ({ position, size }) => {
 
   return (
     <div
-      className="fixed"
+      className="absolute "
       style={{
         top,
         left,
