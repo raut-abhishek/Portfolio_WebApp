@@ -6,7 +6,7 @@ import ProfileImage from '../../assets/Profile.png'
 
 const About = () => {
   return (
-    <section id='about' className='py-4 px-[7vw] lg:px-[20vw] font-sans mt-16 md:mt-24 lg:mt-32'>
+    <section id='about' className='py-4 px-[7vw] lg:px-[20vw] font-sans mt-16 md:mt-24 lg:mt-32 scroll-mt-28'>
 
       <div className='flex flex-col-reverse md:flex-row justify-between items-center -translate-y-25'>
 
