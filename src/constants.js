@@ -12,6 +12,8 @@ import gitLogo from './assets/tech_logo/git.png';
 import githubLogo from './assets/tech_logo/github.png';
 import vscodeLogo from './assets/tech_logo/vscode.png';
 import vercelLogo from './assets/tech_logo/vercel.png';
+import nodejsLogo from './assets/tech_logo/Nodejs.png';
+import expressjsLogo from './assets/tech_logo/express.png';
 
 // Experience Section Logo's
 import interpeLogo from './assets/company_logo/interpeLogo.png'
@@ -53,6 +55,13 @@ export const SkillsInfo = [
       { name: 'Compass', logo: mcLogo },
     ],
   },
+  {
+    title: 'Backend',
+    skills: [
+      { name: 'Node JS', logo: nodejsLogo },
+      { name: 'Express JS', logo: expressjsLogo }
+    ],
+  }
 ]
 
 
