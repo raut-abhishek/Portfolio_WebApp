@@ -14,9 +14,16 @@ import vscodeLogo from './assets/tech_logo/vscode.png';
 import vercelLogo from './assets/tech_logo/vercel.png';
 import nodejsLogo from './assets/tech_logo/Nodejs.png';
 import expressjsLogo from './assets/tech_logo/express.png';
+import firebaseLogo from './assets/tech_logo/firebase.png'
 
 // Experience Section Logo's
 import interpeLogo from './assets/company_logo/interpeLogo.png'
+
+
+// education section logo's
+import sppuLogo from './assets/education_logo/sppu.png'
+import msbteLogo from './assets/education_logo/msbte.png'
+import tenthLogo from './assets/education_logo/shivajiuniversity.png'
 
 
 
@@ -59,7 +66,8 @@ export const SkillsInfo = [
     title: 'Backend',
     skills: [
       { name: 'Node JS', logo: nodejsLogo },
-      { name: 'Express JS', logo: expressjsLogo }
+      { name: 'Express JS', logo: expressjsLogo },
+      { name: 'Firebase', logo: firebaseLogo },
     ],
   }
 ]
@@ -177,3 +185,33 @@ export const experiences = [
 //       webapp: "https://removeyourbg.netlify.app/",
 //     },
 //   ]
+
+ export const education = [
+    {
+      id: 0,
+      img: sppuLogo,
+      school: "Savitribai Phule University, Pune",
+      date: "November 2022 - July 2025",
+      grade: "7.6  SGPA",
+      desc: "I have completed my Bachelor’s degree (BE) in Information Technology from Dhole Patil Collage of Engineering. During my time there, I built a strong foundation in programming, software development, and core IT concepts. I studied courses such as Data Structures, Algorithms, Database Management Systems, Web Development, Networking, and Software Engineering. I actively participated in workshops, technical events, and projects, which helped me enhance my practical skills and problem-solving abilities. My experience during my BE has been instrumental in shaping both my technical expertise and professional growth.",
+      degree: "BE in Information Technology",
+    },
+    {
+      id: 1,
+      img: msbteLogo,
+      school: "Government Polytechnic Karad",
+      date: "August 2018 - Aug 2021",
+      grade: "85.39%",
+      desc: "I have completed my Diploma in Mechanical Engineering from Government Polytechnic Karad. During my studies, I gained a strong foundation in mechanical principles, design, and manufacturing processes, including Thermodynamics, Mechanics of Materials, and CAD/CAM. Participation in workshops and hands-on projects enhanced my practical skills and problem-solving abilities, preparing me for technical roles in the industry.",
+      degree: "Diploma in Mechanical Engineering",
+    },
+    {
+      id: 2,
+      img: tenthLogo,
+      school: "Mudhoji high school, Phaltan",
+      date: "Apr 2017 - March 2018",
+      grade: "80.60%",
+      desc: "I completed my class 10 education from Mudhoji high school, Phaltan, under the SSC board, where I studied Science with Computer.",
+      degree: "SSC(X), Science with Computer Application",
+    },
+  ];
