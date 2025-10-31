@@ -7,6 +7,7 @@ import tailwindcssLogo from './assets/tech_logo/tailwindcss.png';
 import gsapLogo from './assets/tech_logo/gsap.png';
 import javaLogo from './assets/tech_logo/java.png';
 import mcLogo from './assets/tech_logo/mc.png';
+import sqlLogo from './assets/tech_logo/mySql.png';
 // Skills Section Logo's
 import gitLogo from './assets/tech_logo/git.png';
 import githubLogo from './assets/tech_logo/github.png';
@@ -25,6 +26,11 @@ import sppuLogo from './assets/education_logo/sppu.png'
 import msbteLogo from './assets/education_logo/msbte.png'
 import tenthLogo from './assets/education_logo/shivajiuniversity.png'
 
+// project
+import mernauthLogo from './assets/work_logo/mernAuth.png'
+import portfolioLogo from './assets/work_logo/portfolio.png'
+import clouddriveLogo from './assets/work_logo/drive.png'
+
 
 
 
@@ -39,7 +45,7 @@ export const SkillsInfo = [
       { name: 'React JS', logo: reactjsLogo },
       { name: 'Tailwind CSS', logo: tailwindcssLogo },
       { name: 'GSAP', logo: gsapLogo },
-      { name: 'JAVA', logo: javaLogo },
+      
 
     ],
   },
@@ -49,7 +55,8 @@ export const SkillsInfo = [
       { name: 'HTML', logo: htmlLogo },
       { name: 'CSS', logo: cssLogo },
       { name: 'Java', logo: javaLogo },,
-      { name: 'JavaScript', logo: javascriptLogo }
+      { name: 'JavaScript', logo: javascriptLogo },
+      { name: 'SQL', logo: sqlLogo }
     ],
   },
   {
@@ -68,6 +75,7 @@ export const SkillsInfo = [
       { name: 'Node JS', logo: nodejsLogo },
       { name: 'Express JS', logo: expressjsLogo },
       { name: 'Firebase', logo: firebaseLogo },
+      { name: 'JAVA', logo: javaLogo },
     ],
   }
 ]
@@ -80,7 +88,7 @@ export const experiences = [
     role: "Web Developer",
     company: "InternPe",
     date: "February 2024 - March 2024",
-    desc: "Developed dynamic and scalable web applications using the fornt-end framework, handling frontend development. Collaborated with cross-functional teams to build responsive UI, and optimize application performance.",
+    desc: "Developed dynamic and scalable web applications using the front-end framework, handling frontend development. Collaborated with cross-functional teams to build responsive UI, and optimize application performance.",
     skills: [
       "HTML",
       "CSS",
@@ -92,29 +100,67 @@ export const experiences = [
 ];
 
 
-// export const projects = [
-//     {
-//       id: 0, 
-        
-//       title: "GitHub Profile Detective",
-//       description:
-//         "A powerful and user-friendly React.js application designed to uncover and showcase detailed GitHub profile information. Simply enter a GitHub username, and the app fetches comprehensive data, including profile stats, repositories, followers, and contributions. The intuitive interface ensures a seamless experience, making it a must-visit tool for developers and recruiters.",
-//       image: githubdetLogo,
-//       tags: ["HTML", "CSS", "JavaScript", "React JS", "API"],
-//       github: "https://github.com/codingmastr/GitHub-Profile-Search-App-Using-React-JS",
-//       webapp: "https://githubprofiledetective.netlify.app/",
-//     },
-//     {
-//       id: 1,
-//       title: "CS Prep",
-//       description:
-//         "A full-stack quiz-based platform designed for GATE/UGC NET students to practice previous year questions and create customized tests. The platform offers comprehensive profile stats and detailed results, helping students track and improve their preparation journey effectively.",
-//       image: csprepLogo,
-//       tags: ["React JS", "Node.js", "MongoDB", "Express", "HTML", "CSS", "JavaScript"],
-//       github: "https://github.com/codingmastr/CSPrep",
-//       webapp: "https://csprep.netlify.app/",
-//     },
-//     {
+export const projects = [
+    {
+      id: 0,
+      title: "MERN Auth System",
+      description:"A secure authentication system built using the MERN stack, featuring user registration, login, JWT-based authentication, and protected routes. The app ensures smooth user experience with form validation and responsive design, making it a solid foundation for full-stack applications.",
+      image: mernauthLogo,
+      tags: ["MongoDB", "Express", "React JS", "Node.js", "JWT", "Tailwindcss"],
+      github: "https://github.com/raut-abhishek/MERN-Authentication",
+      webapp: "https://mern-authentication-client-wlnz.onrender.com",
+    },
+    {
+      id: 1,
+      title: "Cloud Drive",
+      description: "A cloud-based file management platform allowing users to upload, store, and access files securely from anywhere. Built with the MERN stack, it includes authentication, cloud storage integration, and a clean UI to enhance productivity and accessibility.",
+      image: clouddriveLogo,
+      tags: ["MongoDB", "Express", "React JS", "Node.js", "Firebase", "JWT"],
+      github: "https://github.com/raut-abhishek/Drive_Project",
+      webapp: "https://drive-project-7ccj.onrender.com",
+    },
+    {
+      id: 2,
+      title: "Portfolio Website",
+      description: "A visually appealing and interactive personal portfolio built using modern frontend technologies. It highlights projects, skills, and achievements with smooth GSAP animations and Shery.js effects, delivering an engaging and dynamic user experience.",
+      image: portfolioLogo,
+      tags: ["HTML", "CSS", "JavaScript", "GSAP", "Shery.js"],
+      github: "https://github.com/raut-abhishek/Portfolio_WebApp",
+      webapp: "https://portfolio-web-app-bice.vercel.app/",
+    }     
+]
+
+ export const education = [
+    {
+      id: 0,
+      img: sppuLogo,
+      school: "Savitribai Phule University, Pune",
+      date: "November 2022 - July 2025",
+      grade: "7.6  SGPA",
+      desc: "I have completed my Bachelor’s degree (BE) in Information Technology from Dhole Patil Collage of Engineering. During my time there, I built a strong foundation in programming, software development, and core IT concepts. I studied courses such as Data Structures, Algorithms, Database Management Systems, Web Development, Networking, and Software Engineering. I actively participated in workshops, technical events, and projects, which helped me enhance my practical skills and problem-solving abilities. My experience during my BE has been instrumental in shaping both my technical expertise and professional growth.",
+      degree: "BE in Information Technology",
+    },
+    {
+      id: 1,
+      img: msbteLogo,
+      school: "Government Polytechnic Karad",
+      date: "August 2018 - Aug 2021",
+      grade: "85.39%",
+      desc: "I have completed my Diploma in Mechanical Engineering from Government Polytechnic Karad. During my studies, I gained a strong foundation in mechanical principles, design, and manufacturing processes, including Thermodynamics, Mechanics of Materials, and CAD/CAM. Participation in workshops and hands-on projects enhanced my practical skills and problem-solving abilities, preparing me for technical roles in the industry.",
+      degree: "Diploma in Mechanical Engineering",
+    },
+    {
+      id: 2,
+      img: tenthLogo,
+      school: "Mudhoji high school, Phaltan",
+      date: "Apr 2017 - March 2018",
+      grade: "80.60%",
+      desc: "I completed my class 10 education from Mudhoji high school, Phaltan, under the SSC board, where I studied Science with Computer.",
+      degree: "SSC(X), Science with Computer Application",
+    },
+  ];
+
+  // {
 //       id: 2,
 //       title: "Movie Recommendation App",
 //       description:
@@ -184,34 +230,3 @@ export const experiences = [
 //       github: "https://github.com/codingmastr/Image-Background-Remover",
 //       webapp: "https://removeyourbg.netlify.app/",
 //     },
-//   ]
-
- export const education = [
-    {
-      id: 0,
-      img: sppuLogo,
-      school: "Savitribai Phule University, Pune",
-      date: "November 2022 - July 2025",
-      grade: "7.6  SGPA",
-      desc: "I have completed my Bachelor’s degree (BE) in Information Technology from Dhole Patil Collage of Engineering. During my time there, I built a strong foundation in programming, software development, and core IT concepts. I studied courses such as Data Structures, Algorithms, Database Management Systems, Web Development, Networking, and Software Engineering. I actively participated in workshops, technical events, and projects, which helped me enhance my practical skills and problem-solving abilities. My experience during my BE has been instrumental in shaping both my technical expertise and professional growth.",
-      degree: "BE in Information Technology",
-    },
-    {
-      id: 1,
-      img: msbteLogo,
-      school: "Government Polytechnic Karad",
-      date: "August 2018 - Aug 2021",
-      grade: "85.39%",
-      desc: "I have completed my Diploma in Mechanical Engineering from Government Polytechnic Karad. During my studies, I gained a strong foundation in mechanical principles, design, and manufacturing processes, including Thermodynamics, Mechanics of Materials, and CAD/CAM. Participation in workshops and hands-on projects enhanced my practical skills and problem-solving abilities, preparing me for technical roles in the industry.",
-      degree: "Diploma in Mechanical Engineering",
-    },
-    {
-      id: 2,
-      img: tenthLogo,
-      school: "Mudhoji high school, Phaltan",
-      date: "Apr 2017 - March 2018",
-      grade: "80.60%",
-      desc: "I completed my class 10 education from Mudhoji high school, Phaltan, under the SSC board, where I studied Science with Computer.",
-      degree: "SSC(X), Science with Computer Application",
-    },
-  ];
