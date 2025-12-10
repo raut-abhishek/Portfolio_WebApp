@@ -65,59 +65,71 @@ const Work = () => {
       </div>
 
       {/* Modal Container */}
+      {/* Modal Container */}
       {selectedProject && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-90 p-4">
-          <div className="bg-gray-900 rounded-xl shadow-2xl lg:w-full w-[90%] max-w-3xl h-180 overflow-hidden relative">
-            <div className="flex justify-end p-4">
-              <button
-                onClick={handleCloseModal}
-                className="text-white text-3xl font-bold hover:text-purple-500"
-              >
-                &times;
-              </button>
-            </div>
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-6">
+          <div className="bg-gray-900 rounded-2xl shadow-2xl w-[96%] max-w-6xl overflow-hidden relative animate-fadeIn">
 
-            <div className="flex flex-col">
-              <div className="w-full flex justify-center bg-gray-900 px-4">
+            {/* Close Button */}
+            <button
+              onClick={handleCloseModal}
+              className="absolute top-5 right-6 text-white text-4xl font-bold hover:text-purple-500"
+            >
+              &times;
+            </button>
+
+            {/* Horizontal Layout */}
+            <div className="flex flex-col lg:flex-row h-full">
+
+              {/* Left Image Section */}
+              <div className="lg:w-[55%] w-full bg-black/40 p-6 flex items-center justify-center">
                 <img
                   src={selectedProject.image}
                   alt={selectedProject.title}
-                  className="lg:w-full w-[95%] object-contain rounded-xl shadow-2xl"
+                  className="rounded-2xl object-contain max-h-[480px] w-full shadow-xl"
                 />
               </div>
-              <div className="lg:p-8 p-6">
-                <h3 className="lg:text-3xl font-bold text-white mb-4 text-md">
+
+              {/* Right Content */}
+              <div className="lg:w-[45%] w-full p-8 lg:p-12 flex flex-col">
+                <h3 className="text-4xl font-bold text-white mb-6 leading-tight">
                   {selectedProject.title}
                 </h3>
-                <p className="text-gray-400 mb-6 lg:text-base text-xs">
+
+                <p className="text-gray-300 mb-8 text-lg leading-relaxed">
                   {selectedProject.description}
                 </p>
-                <div className="flex flex-wrap gap-2 mb-6">
+
+                {/* Tags */}
+                <div className="flex flex-wrap gap-2 mb-8">
                   {selectedProject.tags.map((tag, index) => (
                     <span
                       key={index}
-                      className="bg-[#251f38] text-xs font-semibold text-purple-500 rounded-full px-2 py-1"
+                      className="bg-[#251f38] text-sm font-medium text-purple-400 rounded-full px-4 py-1.5"
                     >
                       {tag}
                     </span>
                   ))}
                 </div>
-                <div className="flex gap-4">
+
+                {/* Buttons */}
+                <div className="flex gap-4 mt-auto">
                   <a
                     href={selectedProject.github}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-1/2 bg-gray-800 hover:bg-purple-800 text-gray-400 lg:px-6 lg:py-2 px-2 py-1 rounded-xl lg:text-xl text-sm font-semibold text-center"
+                    className="flex-1 bg-gray-800 hover:bg-gray-700 text-gray-300 px-6 py-3 rounded-xl text-center text-lg font-semibold transition"
                   >
                     View Code
                   </a>
+
                   <a
                     href={selectedProject.webapp}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-1/2 bg-purple-600 hover:bg-purple-800 text-white lg:px-6 lg:py-2 px-2 py-1 rounded-xl lg:text-xl text-sm font-semibold text-center"
+                    className="flex-1 bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-xl text-center text-lg font-semibold transition"
                   >
-                    View Live
+                    Live Preview
                   </a>
                 </div>
               </div>
