@@ -19,6 +19,7 @@ import firebaseLogo from './assets/tech_logo/firebase.png'
 
 // Experience Section Logo's
 import interpeLogo from './assets/company_logo/interpeLogo.png'
+import ventarLogo from './assets/company_logo/ventar.png'
 
 
 // education section logo's
@@ -28,7 +29,7 @@ import tenthLogo from './assets/education_logo/shivajiuniversity.png'
 
 // project
 import mernauthLogo from './assets/work_logo/mernAuth.png'
-import portfolioLogo from './assets/work_logo/portfolio.png'
+import aiDeveloperLogo from './assets/work_logo/ai-developer.png'
 import clouddriveLogo from './assets/work_logo/drive.png'
 
 
@@ -82,8 +83,29 @@ export const SkillsInfo = [
 
 
 export const experiences = [
+
   {
     id: 0,
+    img: ventarLogo,
+    role: "Full-Stack Developer",
+    company: "Ventar.it",
+    date: "November 2025 - Till date",
+    desc: "Built end-to-end web applications by developing scalable backend services and responsive front-end interfaces. Worked across the full stack to integrate APIs, manage databases, and enhance overall application performance. Collaborated with cross-functional teams to deliver secure, efficient, and user-centric solutions.",
+    skills: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "React JS",
+      "Node.js",
+      "Express.js",
+      "REST APIs",
+      "MongoDB",
+      "MySQL",
+      "Tailwind CSS",
+    ]
+  },
+  {
+    id: 1,
     img: interpeLogo,
     role: "Web Developer",
     company: "InternPe",
@@ -101,33 +123,45 @@ export const experiences = [
 
 
 export const projects = [
-    {
-      id: 0,
-      title: "MERN Auth System",
-      description:"A secure authentication system built using the MERN stack, featuring user registration, login, JWT-based authentication, and protected routes. The app ensures smooth user experience with form validation and responsive design, making it a solid foundation for full-stack applications.",
-      image: mernauthLogo,
-      tags: ["MongoDB", "Express", "React JS", "Node.js", "JWT", "Tailwindcss"],
-      github: "https://github.com/raut-abhishek/MERN-Authentication",
-      webapp: "https://mern-authentication-client-wlnz.onrender.com",
-    },
-    {
-      id: 1,
-      title: "Cloud Drive",
-      description: "A cloud-based file management platform allowing users to upload, store, and access files securely from anywhere. Built with the MERN stack, it includes authentication, cloud storage integration, and a clean UI to enhance productivity and accessibility.",
-      image: clouddriveLogo,
-      tags: ["MongoDB", "Express", "React JS", "Node.js", "Firebase", "JWT"],
-      github: "https://github.com/raut-abhishek/Drive_Project",
-      webapp: "https://drive-project-7ccj.onrender.com",
-    },
-    {
-      id: 2,
-      title: "Portfolio Website",
-      description: "A visually appealing and interactive personal portfolio built using modern frontend technologies. It highlights projects, skills, and achievements with smooth GSAP animations and Shery.js effects, delivering an engaging and dynamic user experience.",
-      image: portfolioLogo,
-      tags: ["HTML", "CSS", "JavaScript", "GSAP", "Shery.js"],
-      github: "https://github.com/raut-abhishek/Portfolio_WebApp",
-      webapp: "https://portfolio-web-app-bice.vercel.app/",
-    }     
+  {
+    id: 0,
+    title: "AI Developer",
+    description: "An intelligent, real-time collaborative code editor powered by WebContainers and AI. It enables users to generate, edit, run, and manage full-stack applications directly in the browser. Features include live code collaboration, AI-assisted coding and an in-browser runtime capable of executing Node.js projects instantly.",
+    image: aiDeveloperLogo,
+    tags: [
+      "React",
+      "Tailwind CSS",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "Socket.io",
+      "WebContainer",
+      "Google genAI",
+      "JWT",
+      "AI Integration"
+    ],
+    github: "https://github.com/raut-abhishek/AI_Developer",
+    webapp: "https://ai-developer-i45a.onrender.com/REGISTER",
+  },
+  {
+    id: 1,
+    title: "MERN Auth System",
+    description:"A secure authentication system built using the MERN stack, featuring user registration, login, JWT-based authentication, and protected routes. The app ensures smooth user experience with form validation and responsive design, making it a solid foundation for full-stack applications.",
+    image: mernauthLogo,
+    tags: ["MongoDB", "Express", "React JS", "Node.js", "JWT", "Tailwindcss"],
+    github: "https://github.com/raut-abhishek/MERN-Authentication",
+    webapp: "https://mern-authentication-client-wlnz.onrender.com",
+  },
+  {
+    id: 2,
+    title: "Cloud Drive",
+    description: "A cloud-based file management platform allowing users to upload, store, and access files securely from anywhere. Built with the MERN stack, it includes authentication, cloud storage integration, and a clean UI to enhance productivity and accessibility.",
+    image: clouddriveLogo,
+    tags: ["MongoDB", "Express", "React JS", "Node.js", "Firebase", "JWT"],
+    github: "https://github.com/raut-abhishek/Drive_Project",
+    webapp: "https://drive-project-7ccj.onrender.com",
+  },
+         
 ]
 
  export const education = [
