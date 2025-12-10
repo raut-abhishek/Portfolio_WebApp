@@ -27,7 +27,7 @@ const About = () => {
           <span className="text-white">I am a </span>
           <span className="text-[#8245ec]">
             <Typewriter
-              words={['Front-end Developer', 'UI/UX Designer', 'Coder']}
+              words={['Full Stack Developer', 'UI/UX Designer', 'Coder']}
               loop={true}
               cursor
               cursorStyle="|"
@@ -46,7 +46,7 @@ const About = () => {
 
         {/* Resume Button */}
           <a
-            href="https://drive.google.com/file/d/1oD2JT8X7RySOZ2SMaFuGEZmObp12-WOr/view?usp=drive_link"
+            href="https://github.com/raut-abhishek/Abhishek_CV/blob/main/Abhishek_Raut_Resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block text-white py-3 px-8 rounded-full mt-5 text-lg font-bold transition duration-300 transform hover:scale-105"
